@@ -22,13 +22,13 @@
     "express": "^4.17.3",
     "express-handlebars": "^6.0.5"
   },
-  "lint-staged": {
-    "./src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "./src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write"
   },
   "devDependencies": {
     "husky": "^8.0.1",
